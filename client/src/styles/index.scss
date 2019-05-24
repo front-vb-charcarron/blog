@@ -1,0 +1,65 @@
+$theme-color1: #42b983;
+$theme-color2: #565a5f;
+$theme-color3: #2c3e50;
+
+.my-message {
+  min-width: 280px;
+}
+
+.side-bar {
+  .el-menu {
+    height: 100%;
+    border-right: 0;
+
+    span {
+      padding-right: 10px;
+    }
+
+    .el-menu-item.is-active {
+      color: $theme-color1;
+    }
+
+    .el-menu-item:hover,
+    .el-menu-item:focus {
+      background-color: #f5f8f9;
+    }
+  }
+
+  .el-submenu__title {
+    position: relative;
+
+    .el-submenu__icon-arrow {
+      position: absolute;
+      top: 30px;
+      right: 6px;
+    }
+  }
+}
+
+.header {
+  .el-breadcrumb {
+    line-height: 15px;
+  }
+
+  .el-breadcrumb__inner.is-link:hover {
+    color: $theme-color1;
+    cursor: pointer;
+  }
+}
+
+.login {
+  .el-input {
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+  .el-input__suffix-inner {
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container::-webkit-scrollbar {
+    width: 0;
+  }
+}
